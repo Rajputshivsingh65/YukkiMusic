@@ -1,0 +1,193 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YukkiMusic Configuration &mdash; YukkiMusic</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+
+  
+    <link rel="shortcut icon" href="../_static/TheTeamVivek.ico"/>
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=3b5cce75"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            YukkiMusic
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Additional Resources</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../CHANGELOG.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../PRIVACY.html">Privacy Policy for YukkiMusic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LICENSE.html">MIT License</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">YukkiMusic</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">YukkiMusic Configuration</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="yukkimusic-configuration">
+<h1>YukkiMusic Configuration<a class="headerlink" href="#yukkimusic-configuration" title="Link to this heading"></a></h1>
+<section id="environment-setup">
+<h2>Environment Setup<a class="headerlink" href="#environment-setup" title="Link to this heading"></a></h2>
+<section id="here-s-an-example-sample-env">
+<h3>Here’s an Example Sample.env<a class="headerlink" href="#here-s-an-example-sample-env" title="Link to this heading"></a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">API_ID</span><span class="w"> </span><span class="o">=</span>
+<span class="nv">API_HASH</span><span class="w"> </span><span class="o">=</span>
+<span class="nv">BOT_TOKEN</span><span class="w"> </span><span class="o">=</span>
+<span class="nv">MONGO_DB_URI</span><span class="w"> </span><span class="o">=</span>
+<span class="nv">LOG_GROUP_ID</span><span class="w"> </span><span class="o">=</span>
+<span class="nv">OWNER_ID</span><span class="w"> </span><span class="o">=</span>
+<span class="nv">STRING_SESSIONS</span><span class="w"> </span><span class="o">=</span>
+</pre></div>
+</div>
+<ul>
+<li><dl>
+<dt>Copy the <cite>example.env</cite> file to <cite>.env</cite></dt><dd><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cp<span class="w"> </span>sample.env<span class="w"> </span>.env
+</pre></div>
+</div>
+</dd>
+</dl>
+</li>
+<li><p><strong>Fill in the necessary variables in your .env :</strong>
+- <strong>API_ID</strong>: The API ID obtained from <a class="reference external" href="https://my.telegram.org/auth">Telegram</a>.
+- <strong>API_HASH</strong>: The API hash obtained from <a class="reference external" href="https://my.telegram.org/auth">Telegram</a>.
+- <strong>BOT_TOKEN</strong>: The bot token you get from <a class="reference external" href="https://core.telegram.org/bots#botfather">BotFather</a>.
+- <strong>MONGO_DB_URI</strong>: The MongoDB connection string for your database.
+- <strong>LOG_GROUP_ID</strong>: The ID of the group to which logs should be sent (set to <cite>0</cite> if no logs are needed).
+- <strong>OWNER_ID</strong>: The ID of the bot owner.
+- <strong>STRING_SESSIONS</strong>: Your session string (usually generated via a method like Pyrogram) or You can generate from <a class="reference external" href="https://telegram.tools/session-string-generator#pyrogram">Telegram Tools</a> And make sure you environment is Production Don’t use Test.</p></li>
+</ul>
+</section>
+</section>
+<section id="available-vars">
+<h2>Available Vars<a class="headerlink" href="#available-vars" title="Link to this heading"></a></h2>
+<p>Here is a List of all Available Vars of <a class="reference external" href="https://github.com/TheTeamVivek/YukkiMusic">YukkiMusic</a>.</p>
+<p>Config vars are basically the variables which configure or modify bot to function, which are the basic necessities of plugins or code to work. You have to set the proper mandatory vars to make it functional and to start the basic feature of bot.</p>
+<ol class="arabic simple">
+<li><p>API_HASH</p></li>
+<li><p>API_ID</p></li>
+<li><p>ASSISTANT_LEAVE_TIME</p></li>
+<li><p>AUTO_LEAVING_ASSISTANT</p></li>
+<li><p>BOT_TOKEN</p></li>
+<li><p>CLEANMODE_MINS</p></li>
+<li><p>DURATION_LIMIT</p></li>
+<li><p>GIT_TOKEN</p></li>
+<li><p>GITHUB_REPO</p></li>
+<li><p>GLOBAL_IMG_URL</p></li>
+<li><p>HEROKU_API_KEY</p></li>
+<li><p>HEROKU_APP_NAME</p></li>
+<li><p>LOG_GROUP_ID</p></li>
+<li><p>MONGO_DB_URI</p></li>
+<li><p>OWNER_ID</p></li>
+<li><p>PING_IMG_URL</p></li>
+<li><p>PLAYLIST_FETCH_LIMIT</p></li>
+<li><p>PLAYLIST_IMG_URL</p></li>
+<li><p>PRIVATE_BOT_MODE</p></li>
+<li><p>SERVER_PLAYLIST_LIMIT</p></li>
+<li><p>SONG_DOWNLOAD_DURATION_LIMIT</p></li>
+<li><p>SOUNCLOUD_IMG_URL</p></li>
+<li><p>SPOTIFY_ALBUM_IMG_URL</p></li>
+<li><p>SPOTIFY_ARTIST_IMG_URL</p></li>
+<li><p>SPOTIFY_CLIENT_ID</p></li>
+<li><p>SPOTIFY_CLIENT_SECRET</p></li>
+<li><p>SPOTIFY_PLAYLIST_IMG_URL</p></li>
+<li><p>START_IMG_URL</p></li>
+<li><p>STATS_IMG_URL</p></li>
+<li><p>STREAM_IMG_URL</p></li>
+<li><p>STRING_SESSIONS</p></li>
+<li><p>SUPPORT_CHANNEL</p></li>
+<li><p>SUPPORT_GROUP</p></li>
+<li><p>TELEGRAM_AUDIO_URL</p></li>
+<li><p>TELEGRAM_EDIT_SLEEP</p></li>
+<li><p>TELEGRAM_VIDEO_URL</p></li>
+<li><p>TG_AUDIO_FILESIZE_LIMIT</p></li>
+<li><p>TG_VIDEO_FILESIZE_LIMIT</p></li>
+<li><p>UPSTREAM_BRANCH</p></li>
+<li><p>UPSTREAM_REPO</p></li>
+<li><p>VIDEO_STREAM_LIMIT</p></li>
+<li><p>YOUTUBE_EDIT_SLEEP</p></li>
+</ol>
+<ol class="arabic simple" start="42">
+<li><p>YOUTUBE_IMG_URL</p></li>
+</ol>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024-2025, TheTeamVivek.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
