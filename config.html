@@ -91,7 +91,7 @@
 <h1>Configuration<a class="headerlink" href="#configuration" title="Link to this heading"></a></h1>
 <section id="environment-setup">
 <h2>Environment Setup<a class="headerlink" href="#environment-setup" title="Link to this heading"></a></h2>
-<p>Here’s an Example Sample.env</p>
+<p>Here’s an Example <cite>sample.env</cite></p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">API_ID</span><span class="w"> </span><span class="o">=</span>
 <span class="nv">API_HASH</span><span class="w"> </span><span class="o">=</span>
 <span class="nv">BOT_TOKEN</span><span class="w"> </span><span class="o">=</span>
@@ -117,8 +117,8 @@
 <li><p><strong>BOT_TOKEN</strong>: The bot token you get from <a class="reference external" href="https://core.telegram.org/bots#botfather">BotFather</a>.</p></li>
 <li><p><strong>MONGO_DB_URI</strong>: The MongoDB connection string for your database.</p></li>
 <li><p><strong>LOG_GROUP_ID</strong>: The ID of the group to which logs should be sent (set to <cite>0</cite> if no logs are needed).</p></li>
-<li><p><strong>OWNER_ID</strong>: The ID of the bot owner.</p></li>
-<li><p><strong>STRING_SESSIONS</strong>: Your session string (usually generated via a method like Pyrogram) or You can generate from <a class="reference external" href="https://telegram.tools/session-string-generator#pyrogram">Telegram Tools</a> And make sure you environment is Production Don’t use Test.</p></li>
+<li><p><strong>OWNER_ID</strong>: The  User ID That will treated as the Owner of the bot, Multiple Id can be separated with a space.</p></li>
+<li><p><strong>STRING_SESSIONS</strong>: Your session string (usually generated via a method like Pyrogram) or You can generate from <a class="reference external" href="https://telegram.tools/session-string-generator#pyrogram">Telegram Tools</a> And make sure you environment is <strong>Production</strong> don’t use <strong>Test</strong>.</p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -134,16 +134,16 @@
 <ul>
 <li><dl class="simple">
 <dt>API_ID &amp; API_HASH</dt><dd><ul class="simple">
-<li><p>Go to my.telegram.org then Enter your Phone Number with your country code.</p></li>
+<li><p>Go to <a class="reference external" href="https://my.telegram.org/auth">my.telegram.org</a> then Enter your Phone Number with your country code.</p></li>
 <li><p>After, you are logged in click on API Development Tools.</p></li>
-<li><p>Enter Anything as App name and App short name, Enter my.telegram.org in url section</p></li>
+<li><p>Enter Anything as App name and App short name, Enter <cite>my.telegram.org</cite> in url section</p></li>
 <li><p>That’s it, You’ll get your API_ID and API_HASH.</p></li>
 </ul>
 </dd>
 </dl>
 </li>
 <li><dl class="simple">
-<dt>BOT_TOKEN</dt><dd><p>Get it from &#64;Botfather in Telegram</p>
+<dt>BOT_TOKEN</dt><dd><p>Get token of the bot from the ` &#64;Botfather &lt;<a class="reference external" href="https://t.me/Botfather">https://t.me/Botfather</a>&gt;`_ in Telegram</p>
 </dd>
 </dl>
 </li>
@@ -154,8 +154,8 @@
 <p>Remember to add your Music Bot , Assistant Accounts and Logger Id in Group and Promote them Admin with Full Rights.</p>
 </div>
 <ul class="simple">
-<li><p>Add &#64;MissRose_Bot in your Group from Add Member &gt; Search “&#64;MissRose_Bot” and then Add.</p></li>
-<li><p>After added, Just type “/id” in the chat.</p></li>
+<li><p>Add <a class="reference external" href="https://t.me/MissRose_Bot">&#64;MissRose_Bot</a> in your Group from Add Member &gt; Search <cite>&#64;MissRose_Bot</cite> and then Add.</p></li>
+<li><p>After added, Just type <cite>/id</cite> in the chat.</p></li>
 <li><p>You’ll get the ID of your group.</p></li>
 </ul>
 </dd>
@@ -179,14 +179,26 @@
 </li>
 <li><dl>
 <dt>STRING_SESSIONS</dt><dd><p>A list of Pyrogram String Session seperated with comma “,” of a Telegram Account which will be joining Group Calls for streaming.</p>
-<p>Your session string (usually generated via a method like Pyrogram) or You can generate from <a class="reference external" href="https://telegram.tools/session-string-generator#pyrogram">Telegram Tools</a> And make sure you environment is Production Don’t use Test.</p>
+<p>Your session string (usually generated via a method like Pyrogram) or You can generate from <a class="reference external" href="https://telegram.tools/session-string-generator#pyrogram">Telegram Tools</a> And make sure you environment is <strong>Production</strong> donn’t use <strong>Test</strong>.</p>
 <div class="literal-block-wrapper docutils container" id="id4">
 <div class="code-block-caption"><span class="caption-text">Example of Multiple String Sessions</span><a class="headerlink" href="#id4" title="Link to this code"></a></div>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go"> STRING_SESSIONS = string1,  string2, string3,  string4</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="w"> </span><span class="nv">STRING_SESSIONS</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>string1,<span class="w">  </span>string2,<span class="w"> </span>string3,<span class="w">  </span>string4
 </pre></div>
 </div>
 </div>
-<p>Like this as your mood you can add multiple String sessions of Your assistant</p>
+<p>Like this as your mood you can add multiple String sessions of Your assistant for multiple Assistsant.</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>MONGO_DB_URI</dt><dd><blockquote>
+<div><p>Not a mandatory var, but yes kind off.</p>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Yukki no longer requires MONGO DB as mandatory. Leave it blank and bot will use Yukki’s database for your bot. Seperate database and Easy to use.</p>
+<p>To maintain bot’s privacy you wont be able to manage sudoers.  Bot will create an separate collection for you and no other bot’s database will clash with it.</p>
+</div>
 </dd>
 </dl>
 </li>
