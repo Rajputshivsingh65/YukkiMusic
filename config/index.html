@@ -110,58 +110,62 @@
 </div></blockquote>
 </li>
 </ul>
+<p>You also can fill these belows Available Vars</p>
 </section>
 <section id="available-vars">
 <h2>Available Vars<a class="headerlink" href="#available-vars" title="Link to this heading"></a></h2>
 <p>Here is a List of all Available Vars of <a class="reference external" href="https://github.com/TheTeamVivek/YukkiMusic">YukkiMusic</a>.</p>
 <p>Config vars are basically the variables which configure or modify bot to function, which are the basic necessities of plugins or code to work. You have to set the proper mandatory vars to make it functional and to start the basic feature of bot.</p>
-<ol class="arabic simple">
-<li><p>API_HASH</p></li>
-<li><p>API_ID</p></li>
-<li><p>ASSISTANT_LEAVE_TIME</p></li>
-<li><p>AUTO_LEAVING_ASSISTANT</p></li>
-<li><p>BOT_TOKEN</p></li>
-<li><p>CLEANMODE_MINS</p></li>
-<li><p>DURATION_LIMIT</p></li>
-<li><p>GIT_TOKEN</p></li>
-<li><p>GITHUB_REPO</p></li>
-<li><p>GLOBAL_IMG_URL</p></li>
-<li><p>HEROKU_API_KEY</p></li>
-<li><p>HEROKU_APP_NAME</p></li>
-<li><p>LOG_GROUP_ID</p></li>
-<li><p>MONGO_DB_URI</p></li>
-<li><p>OWNER_ID</p></li>
-<li><p>PING_IMG_URL</p></li>
-<li><p>PLAYLIST_FETCH_LIMIT</p></li>
-<li><p>PLAYLIST_IMG_URL</p></li>
-<li><p>PRIVATE_BOT_MODE</p></li>
-<li><p>SERVER_PLAYLIST_LIMIT</p></li>
-<li><p>SONG_DOWNLOAD_DURATION_LIMIT</p></li>
-<li><p>SOUNCLOUD_IMG_URL</p></li>
-<li><p>SPOTIFY_ALBUM_IMG_URL</p></li>
-<li><p>SPOTIFY_ARTIST_IMG_URL</p></li>
-<li><p>SPOTIFY_CLIENT_ID</p></li>
-<li><p>SPOTIFY_CLIENT_SECRET</p></li>
-<li><p>SPOTIFY_PLAYLIST_IMG_URL</p></li>
-<li><p>START_IMG_URL</p></li>
-<li><p>STATS_IMG_URL</p></li>
-<li><p>STREAM_IMG_URL</p></li>
-<li><p>STRING_SESSIONS</p></li>
-<li><p>SUPPORT_CHANNEL</p></li>
-<li><p>SUPPORT_GROUP</p></li>
-<li><p>TELEGRAM_AUDIO_URL</p></li>
-<li><p>TELEGRAM_EDIT_SLEEP</p></li>
-<li><p>TELEGRAM_VIDEO_URL</p></li>
-<li><p>TG_AUDIO_FILESIZE_LIMIT</p></li>
-<li><p>TG_VIDEO_FILESIZE_LIMIT</p></li>
-<li><p>UPSTREAM_BRANCH</p></li>
-<li><p>UPSTREAM_REPO</p></li>
-<li><p>VIDEO_STREAM_LIMIT</p></li>
-<li><p>YOUTUBE_EDIT_SLEEP</p></li>
-</ol>
-<ol class="arabic simple" start="42">
-<li><p>YOUTUBE_IMG_URL</p></li>
-</ol>
+<section id="mandatory-vars">
+<h3>Mandatory Vars<a class="headerlink" href="#mandatory-vars" title="Link to this heading"></a></h3>
+<ul>
+<li><p>API_ID &amp; API_HASH</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Go to my.telegram.org then Enter your Phone Number with your country code.</p></li>
+<li><p>After, you are logged in click on API Development Tools.</p></li>
+<li><p>Enter Anything as App name and App short name, Enter my.telegram.org in url section</p></li>
+<li><p>That’s it, You’ll get your API_ID and API_HASH.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>BOT_TOKEN</p>
+<blockquote>
+<div><p>Get it from &#64;Botfather in Telegram</p>
+</div></blockquote>
+</li>
+<li><dl>
+<dt>LOG_GROUP_ID</dt><dd><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You’ll need a Group for this.</p>
+<p>Remember to add your Music Bot , Assistant Accounts and Logger Id in Group and Promote them Admin with Full Rights.</p>
+</div>
+<ul class="simple">
+<li><p>Add &#64;MissRose_Bot in your Group from Add Member &gt; Search “&#64;MissRose_Bot” and then Add.</p></li>
+<li><p>After added, Just type “/id” in the chat.</p></li>
+<li><p>You’ll get the ID of your group.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>OWNER_ID</p>
+<blockquote>
+<div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Value must be an integer like 0123456789</p>
+<p>You can add multiple userid seperated with a Space</p>
+<div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-text">Example of Multiple Userid</span><a class="headerlink" href="#id2" title="Link to this code"></a></div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="w"> </span><span class="nv">OWNER_ID</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1234567890</span><span class="w"> </span><span class="m">2345617890</span><span class="w"> </span><span class="m">8790654321</span><span class="w"> </span><span class="m">6578012347</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div></blockquote>
+</li>
+</ul>
+<p>Your user id (not username) Get it by using command /id on the Group in the reply to your message where Rose Bot was added.</p>
+</section>
 </section>
 </section>
 
