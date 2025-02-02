@@ -150,7 +150,7 @@
 <li><dl>
 <dt>LOG_GROUP_ID</dt><dd><div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>You’ll need a Group for this.</p>
+<p>You’ll need a <strong>Group</strong> for this.</p>
 <p>Remember to add your Music Bot , Assistant Accounts and Logger Id in Group and Promote them Admin with Full Rights.</p>
 </div>
 <ul class="simple">
@@ -199,6 +199,24 @@
 <p>Yukki no longer requires MONGO DB as mandatory. Leave it blank and bot will use Yukki’s database for your bot. Seperate database and Easy to use.</p>
 <p>To maintain bot’s privacy you wont be able to manage sudoers.  Bot will create an separate collection for you and no other bot’s database will clash with it.</p>
 </div>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>COOKIE_LINK</dt><dd><p>This is <strong>not a mandatory</strong> variable, but it is necessary for the bot to play songs perfectly due to YouTube verification.</p>
+<p>Without cookies, the bot may be unable to download songs.</p>
+<p><strong>How to obtain and use cookies:</strong>
+1. Get your YouTube cookies.
+2. Go to [batbin.me](<a class="reference external" href="https://batbin.me">https://batbin.me</a>).
+3. Paste your cookies and tap on <strong>Save</strong>.
+4. Copy the generated URL.
+5. Set <cite>COOKIE_LINK</cite> with this URL.</p>
+<p><strong>Alternative Method:</strong>
+If you don’t want to use a URL, you can manually add cookies:
+1. Navigate to <cite>config/cookies/</cite>.
+2. Create a <cite>.txt</cite> file.
+3. Paste your cookies inside the file.</p>
+<p>This ensures smooth song playback without verification issues.</p>
 </dd>
 </dl>
 </li>
