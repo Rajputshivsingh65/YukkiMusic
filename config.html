@@ -51,7 +51,8 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Configuration</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#environment-setup">Environment Setup</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#available-vars">Available Vars</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#mandatory-vars">Mandatory Vars</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#necessary-vars">Necessary Vars</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#optional-variables">Optional Variables</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="cookies.html">YouTube Cookies</a></li>
 </ul>
 </li>
@@ -134,8 +135,8 @@
 <h2>Available Vars<a class="headerlink" href="#available-vars" title="Link to this heading"></a></h2>
 <p>Here is a List of all Available Vars of <a class="reference external" href="https://github.com/TheTeamVivek/YukkiMusic">YukkiMusic</a>.</p>
 <p>Config vars are basically the variables which configure or modify bot to function, which are the basic necessities of plugins or code to work. You have to set the proper mandatory vars to make it functional and to start the basic feature of bot.</p>
-<section id="mandatory-vars">
-<h3>Mandatory Vars<a class="headerlink" href="#mandatory-vars" title="Link to this heading"></a></h3>
+<section id="necessary-vars">
+<h3>Necessary Vars<a class="headerlink" href="#necessary-vars" title="Link to this heading"></a></h3>
 <ul>
 <li><dl class="simple">
 <dt>API_ID &amp; API_HASH</dt><dd><ul class="simple">
@@ -197,7 +198,7 @@
 </li>
 <li><dl>
 <dt>MONGO_DB_URI</dt><dd><blockquote>
-<div><p>Not a mandatory var, but yes kind off.</p>
+<div><p>Not a Necessary var, but yes kind off.</p>
 </div></blockquote>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -210,7 +211,7 @@
 <li><dl>
 <dt>COOKIE_LINK</dt><dd><div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>This is <strong>not a mandatory</strong> variable, but it is necessary for the bot to play songs perfectly due to YouTube verification.</p>
+<p>This is <strong>not a Necessary</strong> variable, but it is necessary for the bot to play songs perfectly due to YouTube verification.</p>
 <p>Without cookies, the bot may be unable to download songs.</p>
 </div>
 <p><strong>How to obtain COOKIE_LINK:</strong></p>
@@ -233,6 +234,22 @@
 <p class="admonition-title">See also</p>
 <p>Don’t know how to get cookies? See <a class="reference internal" href="cookies.html"><span class="doc">YouTube Cookies</span></a> This properly</p>
 </div>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+<section id="optional-variables">
+<h3>Optional Variables<a class="headerlink" href="#optional-variables" title="Link to this heading"></a></h3>
+<ul>
+<li><dl>
+<dt>AUTO_LEAVING_ASSISTANT</dt><dd><div class="hint admonition">
+<p class="admonition-title">What is This?</p>
+<p>Yukki has a feature called auto assistant leaving.</p>
+<p>It leaves assistant accounts from all chats after a certain amount of time. You can set that time via ASSISTANT_LEAVE_TIME</p>
+<p>You can use this mode, it enhances your bot’s performance</p>
+</div>
+<p>Set it in <strong>True</strong> if you want to leave your assistant after a certain amount of time.. Default to <strong>False</strong>.</p>
 </dd>
 </dl>
 </li>
