@@ -241,7 +241,7 @@
 </section>
 <section id="optional-variables">
 <h3>Optional Variables<a class="headerlink" href="#optional-variables" title="Link to this heading"></a></h3>
-<ul>
+<ul id="auto-leaving-assistant">
 <li><dl>
 <dt>AUTO_LEAVING_ASSISTANT</dt><dd><div class="hint admonition">
 <p class="admonition-title">What is This?</p>
@@ -254,9 +254,10 @@
 </dl>
 </li>
 </ul>
-<ul class="simple" id="assistant-leave-time">
-<li><dl class="simple">
+<ul id="assistant-leave-time">
+<li><dl>
 <dt>ASSISTANT_LEAVE_TIME</dt><dd><p>Time after which your assistant account will leave served chats automatically. Default to <code class="docutils literal notranslate"><span class="pre">1800</span></code> seconds, i.e 30 Mins</p>
+<p>To Use this feature, use <a class="reference internal" href="#auto-leaving-assistant"><span class="std std-ref">AUTO_LEAVING_ASSISTANT</span></a>. Set it to <code class="docutils literal notranslate"><span class="pre">True</span></code> to enable automatic leaving. When set to <code class="docutils literal notranslate"><span class="pre">False</span></code>, the assistant will remain in served chats indefinitely.</p>
 </dd>
 </dl>
 </li>
