@@ -54,14 +54,14 @@
               <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Configuration</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#environment-setup">Environment Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#environment-setup">Environment Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cookies.html">YouTube Cookies</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#available-vars">Available Vars</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#necessary-vars">Necessary Vars</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#optional-variables-recommended">Optional Variables [ Recommended ]</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#optional-variables">Optional Variables</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="cookies.html">YouTube Cookies</a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="#optional-variables">Optional Variables</a></li>
 </ul>
 </li>
 </ul>
@@ -121,8 +121,12 @@
 </dd>
 </dl>
 </li>
+</ul>
+<div class="toctree-wrapper compound">
+</div>
+<ul class="simple">
 <li><dl class="simple">
-<dt>Fill in the necessary variables in your <code class="docutils literal notranslate"><span class="pre">.env</span></code> :</dt><dd><ul class="simple">
+<dt>Fill in the necessary variables in your <code class="docutils literal notranslate"><span class="pre">.env</span></code> :</dt><dd><ul>
 <li><p><strong>API_ID</strong>: The API ID obtained from <a class="reference external" href="https://my.telegram.org/auth">Telegram</a>.</p></li>
 <li><p><strong>API_HASH</strong>: The API hash obtained from <a class="reference external" href="https://my.telegram.org/auth">Telegram</a>.</p></li>
 <li><p><strong>BOT_TOKEN</strong>: The bot token you get from <a class="reference external" href="https://core.telegram.org/bots#botfather">BotFather</a>.</p></li>
@@ -275,9 +279,28 @@
 </dd>
 </dl>
 </li>
-</ul>
-<div class="toctree-wrapper compound">
+<li><dl>
+<dt>CLEANMODE_MINS</dt><dd><div class="hint admonition">
+<p class="admonition-title">What is This?</p>
+<p>Cleanmode, that helps Bot can deletes its old messages automatically  in the group after a set period. You can configure the duration here.</p>
 </div>
+<p>Time (in minutes) after which bot will delete its old messages from chats. <strong>Default to 5 Mins.</strong></p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>DURATION_LIMIT_MIN</dt><dd><div class="hint admonition">
+<p class="admonition-title">What is This?</p>
+<p>When a user plays any music from youtube , apple , spotify or any platform , it gets downloaded on the bot.  You can restrict users of your bot to play upto a maximum limit of audio duration.</p>
+</div>
+</dd>
+</dl>
+</li>
+</ul>
+<p>For example : If <code class="docutils literal notranslate"><span class="pre">DURATION_LIMIT</span></code> is 60 mins, so if a user tries to play a movie of 2-3 hours you’re bot won’t play that.</p>
+<blockquote>
+<div><p>Custom max audio(music) duration for voice chat. Default to 60 mins.</p>
+</div></blockquote>
 </section>
 </section>
 </section>
