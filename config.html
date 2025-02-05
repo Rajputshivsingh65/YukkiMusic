@@ -52,6 +52,9 @@
 <li class="toctree-l2"><a class="reference internal" href="#environment-setup">Environment Setup</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#available-vars">Available Vars</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#necessary-vars">Necessary Vars</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#optional-variables-recommended">Optional Variables [ Recommended ]</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#optional-variables">Optional Variables</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="cookies.html">YouTube Cookies</a></li>
 </ul>
@@ -129,12 +132,12 @@
 </dl>
 </li>
 </ul>
-<p>You also can fill these belows Available Vars</p>
+<p>You also can fill these <span class="xref std std-ref">Optinal  Vars</span></p>
 </section>
 <section id="available-vars">
 <h2>Available Vars<a class="headerlink" href="#available-vars" title="Link to this heading"></a></h2>
 <p>Here is a List of all Available Vars of <a class="reference external" href="https://github.com/TheTeamVivek/YukkiMusic">YukkiMusic</a>.</p>
-<p>Config vars are basically the variables which configure or modify bot to function, which are the basic necessities of plugins or code to work. You have to set the proper mandatory vars to make it functional and to start the basic feature of bot.</p>
+<p>Config vars are basically the variables which configure or modify bot to function, which are the basic necessities of plugins or code to work. You have to set the proper Necessary vars to make it functional and to start the basic feature of bot.</p>
 <section id="necessary-vars">
 <h3>Necessary Vars<a class="headerlink" href="#necessary-vars" title="Link to this heading"></a></h3>
 <ul>
@@ -196,6 +199,12 @@
 </dd>
 </dl>
 </li>
+</ul>
+</section>
+</section>
+<section id="optional-variables-recommended">
+<h2>Optional Variables [ Recommended ]<a class="headerlink" href="#optional-variables-recommended" title="Link to this heading"></a></h2>
+<ul>
 <li><dl>
 <dt>MONGO_DB_URI</dt><dd><blockquote>
 <div><p>Not a Necessary var, but yes kind off.</p>
@@ -238,7 +247,6 @@
 </dl>
 </li>
 </ul>
-</section>
 <section id="optional-variables">
 <h3>Optional Variables<a class="headerlink" href="#optional-variables" title="Link to this heading"></a></h3>
 <ul id="auto-leaving-assistant">
@@ -257,7 +265,10 @@
 <ul id="assistant-leave-time">
 <li><dl>
 <dt>ASSISTANT_LEAVE_TIME</dt><dd><p>Time after which your assistant account will leave served chats automatically. Default to <code class="docutils literal notranslate"><span class="pre">1800</span></code> seconds, i.e 30 Mins</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>To Use this feature, use <a class="reference internal" href="#auto-leaving-assistant"><span class="std std-ref">AUTO_LEAVING_ASSISTANT</span></a>. Set it to <code class="docutils literal notranslate"><span class="pre">True</span></code> to enable automatic leaving. When set to <code class="docutils literal notranslate"><span class="pre">False</span></code>, the assistant will remain in served chats indefinitely.</p>
+</div>
 </dd>
 </dl>
 </li>
