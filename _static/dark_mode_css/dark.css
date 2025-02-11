@@ -68,23 +68,26 @@ html[data-theme="dark"] .wy-nav-content a:visited {
 }
 
 html[data-theme="dark"] .btn-neutral {
-  background-color: #17181c !important;
+  background-color: #22242a !important;
+  border: 1px solid #2d2f36; 
+  color: #e0e0e0 !important; 
 }
 
 html[data-theme="dark"] .btn-neutral:hover {
-  background-color: #101114 !important;
+  background-color: #2a2c33 !important;
 }
 
 html[data-theme="dark"] .btn-neutral:visited {
-  color: #c1c1c1 !important;
+  color: #d1d1d1 !important;
 }
 
 html[data-theme="dark"] .btn {
   box-shadow: none;
+  transition: background-color 0.2s ease-in-out;
 }
 
 html[data-theme="dark"] footer {
-  color: #bdbdbd;
+  color: #d0d0d0;
 }
 
 html[data-theme="dark"] .wy-nav-side {
